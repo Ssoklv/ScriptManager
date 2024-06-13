@@ -19,14 +19,16 @@ This tab contains a few scripts that can improve overall script speed. It includ
 - **Localization mode**: Changes the localization policy for all Read-type nodes within your selection. Select a part of the script, choose a Localization mode, press "Update mode".
 - **GPU usage**: Buttons for disabling/enabling "use GPU if available" option for nodes within your selection.
 
-### 2. Render Switch
+### 2. "Render Switch"
 
-The Render Switch feature simplifies the process of switching between different render outputs within your script. This is particularly useful when dealing with multiple render layers or passes. Key functionalities include:
+The Render Switch feature simplifies the process of switching between different streams within your script before sending it to render. This is particularly useful when dealing with compute-heavy nodes or passes. Key functionalities include:
 
-- **Output Selection**: Easily switch between various render outputs, such as beauty, ambient occlusion, and depth passes, without manually reconnecting nodes.
-- **Render Settings Management**: Store and manage different render settings, enabling quick adjustments based on your compositing needs.
-- **Batch Rendering**: Automate the rendering process for multiple outputs, reducing the time spent on manually initiating renders.
-- **Independent Operation**: Designed to operate independently of other nodes, ensuring high portability and ease of use across various projects.
+- **Render Mode**: Easily switch which variable is used for all Render Switch nodes: `$gui` or `nuke.executing`. `$gui` is used with Render farm, while `nuke.executing` is an option for local calculations
+- **Switch Color**: Select the color of all Render Switch nodes in your script. Pick a color and press `Update Switch Color`
+- **Bookmarks**: Add or delete all the switches from "Bookmarks" list.
+
+To start working with Render Switch system, press `Create first switch`. Copy the created node and paste it throughout your script.
+Each switch has `Stop tracking` & `Resume tracking` buttons. If you stop tracking a certain switch, it's current state will no longer be altered by the main "Render Switch" tab 
 
 ### 3. Backdrops System
 
