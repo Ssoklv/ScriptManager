@@ -19,13 +19,17 @@ This tab contains a few scripts that can improve overall script speed. It includ
 - **Localization mode**: Changes the localization policy for all Read-type nodes within your selection. Select a part of the script, choose a Localization mode, press "Update mode".
 - **GPU usage**: Buttons for disabling/enabling "use GPU if available" option for nodes within your selection.
 
+![localize](https://github.com/Ssoklv/ScriptManager/assets/167530947/86a48558-255a-4061-be79-bd18eecbd1f7)
+
 ### 2. "Render Switch"
 
-The Render Switch feature simplifies the process of switching between different streams within your script before sending it to render. This is particularly useful when dealing with compute-heavy nodes or passes. Key functionalities include:
+The Render Switch feature simplifies the process of automatic switching between different streams within your script depending on your Nuke environment. Before starting the render, Render Switches will automatically switch between their inputs. This is particularly useful when dealing with compute-heavy nodes or passes. Key functionalities include:
 
 - **Render Mode**: Easily switch which variable is used for all Render Switch nodes: `$gui` or `nuke.executing`. `$gui` is used with Render farm, while `nuke.executing` is an option for local calculations
 - **Switch Color**: Select the color of all Render Switch nodes in your script. Pick a color and press `Update Switch Color`
 - **Bookmarks**: Add or delete all the switches from "Bookmarks" list.
+
+![switch](https://github.com/Ssoklv/ScriptManager/assets/167530947/487bb89f-4487-4a85-a01e-6084d72fa129)
 
 To start working with "Render Switch" system, press `Create first switch`. Copy the created node and paste it throughout your script.
 Each switch has `Stop tracking` & `Resume tracking` buttons. If you stop tracking a certain switch, it's current state will no longer be altered by the main "Render Switch" tab 
@@ -37,6 +41,8 @@ The "Backdrops" system in ScriptManager provides an efficient way to visually or
 - **Group Color**: Assign different colors to groups of backdrops for instant visual cues, making it easier to identify sections of your script.
 - **Group Icon**: Add icons to backdrop groups to provide additional context and information about the grouped nodes. This parameter references icons in `.../Nuke/plugins/icons`.
 - **Bookmarks**: Add or delete backdrops within your selection from "Bookmarks" list.
+
+![backdrop](https://github.com/Ssoklv/ScriptManager/assets/167530947/37c1720e-8bc5-48e4-bea7-96b2408f3eee)
 
 To start working with "Backdrops" system:
 1. Add 2+ groups to the `Groups` list by pressing `Add Group`.
