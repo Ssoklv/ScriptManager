@@ -27,22 +27,19 @@ The Render Switch feature simplifies the process of switching between different 
 - **Switch Color**: Select the color of all Render Switch nodes in your script. Pick a color and press `Update Switch Color`
 - **Bookmarks**: Add or delete all the switches from "Bookmarks" list.
 
-To start working with Render Switch system, press `Create first switch`. Copy the created node and paste it throughout your script.
+To start working with "Render Switch" system, press `Create first switch`. Copy the created node and paste it throughout your script.
 Each switch has `Stop tracking` & `Resume tracking` buttons. If you stop tracking a certain switch, it's current state will no longer be altered by the main "Render Switch" tab 
 
-### 3. Backdrops System
+### 3. "Backdrops" System
 
-The Backdrops system in ScriptManager provides an efficient way to visually organize and group nodes within your script. This feature includes:
+The "Backdrops" system in ScriptManager provides an efficient way to visually organize and group backdrops within your script. This feature includes:
 
-- **Color-Coded Backdrops**: Assign different colors to backdrops for instant visual cues, making it easier to identify sections of your script.
-- **Labels and Annotations**: Add labels and annotations to backdrops to provide additional context and information about the grouped nodes.
-- **Dynamic Resizing**: Automatically resize backdrops based on the nodes contained within them, ensuring a clean and organized layout.
-- **No Dependencies**: Free from dependencies on other nodes, enhancing the portability and flexibility of your script.
+- **Group Color**: Assign different colors to groups of backdrops for instant visual cues, making it easier to identify sections of your script.
+- **Group Icon**: Add icons to backdrop groups to provide additional context and information about the grouped nodes. This parameter references icons in `.../Nuke/plugins/icons`.
+- **Bookmarks**: Add or delete backdrops within your selection from "Bookmarks" list.
 
-## Benefits
-
-- **Improved Workflow**: Streamline your compositing workflow with centralized script management, reducing the time spent on organizational tasks.
-- **Enhanced Collaboration**: Facilitate collaboration with team members through version control and clearly organized scripts.
-- **Increased Efficiency**: Quickly switch between render outputs and manage render settings, allowing you to focus on the creative aspects of your work.
-- **Organized Layout**: Maintain a clean and organized script layout with color-coded backdrops and annotations, making complex projects easier to manage.
-- **High Portability**: The design free from expressions and node links ensures that ScriptManager can be easily integrated into various projects without compatibility issues.
+To start working with "Backdrops" system:
+1. Add 2+ groups to the `Groups` list by pressing `Add Group`.
+2. Select a backdrop and press `Convert Backdrop`.
+3. Pick a color and an icon for each group.
+4. Press `Update Group settings`.
